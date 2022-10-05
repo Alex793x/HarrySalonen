@@ -14,10 +14,14 @@ public class Calendar {
         }
     }
 
+    /*    --------- CHECK --------     (Har vi overhovedet brug for denne metode?)
+
     public void printCalendar() {
         for (int i = 0; i < calendar.size(); i++)
             System.out.println(calendar.get(i));
     }
+
+     */
 
     public static int scanDate() {
         System.out.println("Hvilken dato");

@@ -5,10 +5,11 @@ public class PlannerMenu {
     private int userChoice;
     private String menuHeader;
     private String leadText;
-    private final String[] menuItems = {"1: Make Appointment","2: Delete Appointment", "3: Add Vacant Hours",
+    private final String[] menuItems = {"\n1: Make Appointment","2: Delete Appointment", "3: Add Vacant Hours",
             "4: Add Holiday", "5: Make Payment", "6: Access Store Finance", "7: Print Requested Date", "9: QUIT"};
 
     private boolean tryAgain = true;
+
 
     public PlannerMenu() {
 

@@ -64,7 +64,7 @@ public class CustomerAppointment {
     //DELETE CUSTOMER AND MAKE ARRAYPOS DEFAULT
     public static void deleteAppointment() {
         new Calendar().getCalendar().get(readTimeSlot() + (Calendar.scanMonth() * 31 * 8) - (31 * 8) + (Calendar.scanDate() * 8) - 8).
-                setCustomerAppointment("Åben for tidsbestilling", "");
+                setCustomerAppointment("klar til at booke", "");
     }
 
 
