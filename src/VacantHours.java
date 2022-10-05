@@ -6,16 +6,16 @@ public class VacantHours {
 
         TestHarrySalon.in.nextLine();
 
-        System.out.println("1: For at booke ud til frokost, 2: for andre grunde");
+        System.out.println("Tryk - 1: For at booke ud til frokost, 2: for andre grunde");
         String input = TestHarrySalon.in.nextLine();
 
 
         if(input.equals("1")) {
             new Calendar().getCalendar().get(CustomerAppointment.readTimeSlot() + (month * 31 * 8) - (31 * 8) + (date * 8) - 8).
-                    setCustomerAppointment("Til FROKOST", "");
+                    setCustomerAppointment("FROKOST", "");
         } else {
             new Calendar().getCalendar().get(CustomerAppointment.readTimeSlot() + (month * 31 * 8) - (31 * 8) + (date * 8) - 8).
-                    setCustomerAppointment("DESVÆRRE OPTAGET", "");
+                    setCustomerAppointment("OPTAGET", "");
         }
     }
 }

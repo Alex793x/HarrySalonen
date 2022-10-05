@@ -45,7 +45,7 @@ public class Dates {
 
 
     public String toString() {
-        return getDate() + "/" + getMonth() + " Appointment at: " + getTimeSlot() + " customer "
+        return getDate() + "/" + getMonth() + " - Klokken " + getTimeSlot() + " - Aktiviteter: "
                 + getCustomerAppointment();
     }
 }

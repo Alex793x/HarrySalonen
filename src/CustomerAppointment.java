@@ -47,12 +47,12 @@ public class CustomerAppointment {
 
     public static String readName() {
         TestHarrySalon.in.nextLine();
-        System.out.println("tast kundens navn:");
+        System.out.println("Tast kundens navn:");
         return TestHarrySalon.in.nextLine();
     }
 
     public static String readPhone() {
-        System.out.println("tast kundens telefon nr.");
+        System.out.println("Tast kundens telefon nr.");
         return TestHarrySalon.in.nextLine();
     }
 
@@ -64,7 +64,7 @@ public class CustomerAppointment {
     //DELETE CUSTOMER AND MAKE ARRAYPOS DEFAULT
     public static void deleteAppointment() {
         new Calendar().getCalendar().get(readTimeSlot() + (Calendar.scanMonth() * 31 * 8) - (31 * 8) + (Calendar.scanDate() * 8) - 8).
-                setCustomerAppointment("klar til at booke", "");
+                setCustomerAppointment("Åben for tidsbestilling", "");
     }
 
 
@@ -76,9 +76,12 @@ public class CustomerAppointment {
         } else if (firstName.equalsIgnoreCase("Frokost") || firstName.equalsIgnoreCase("Optaget")) {
             return firstName;
 
+        } else if (firstName.equalsIgnoreCase("Klar til at booke")) {
+            return "Tid ledig - " + firstName;
+
         } else {
-            return "CustomerAppointment: " + firstName + ", phone: " + phone
-                    + ", products bought: " + product + ", Customer has paid: " + hasPaid;
+            return "Kundeaftale: " + firstName + ", Telefon: " + phone
+                    + ", Produkter købt: " + product + ", Kunde har betalt: " + hasPaid;
         }
     }
 }
