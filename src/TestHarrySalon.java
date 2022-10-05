@@ -9,9 +9,8 @@ public class TestHarrySalon {
 
     public void run(){
         calendar.makeCalendar();
-        //calendar.printCalendar();
-        // plannerMenu.addHoliday();
-        plannerMenu.addVacantHour();
+        plannerMenu.printMenu();
+        plannerMenu.readChoice();
         calendar.printRequestedCalendarDates();
     }
 
