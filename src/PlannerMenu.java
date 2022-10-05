@@ -1,5 +1,6 @@
 public class PlannerMenu {
     Holiday holiday = new Holiday();
+    VacantHours vacantHours = new VacantHours();
 
 
     public void makeAppointment() {
@@ -12,6 +13,10 @@ public class PlannerMenu {
 
     public void addHoliday() {
         holiday.setHoliday();
+    }
+
+    public void addVacantHour() {
+        vacantHours.setVacantHour();
     }
 
 

@@ -1,4 +1,3 @@
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class TestHarrySalon {
@@ -9,7 +8,8 @@ public class TestHarrySalon {
     public void run(){
         calendar.makeCalendar();
         //calendar.printCalendar();
-        plannerMenu.addHoliday();
+        // plannerMenu.addHoliday();
+        plannerMenu.addVacantHour();
         calendar.printRequestedCalendarDates();
     }
 

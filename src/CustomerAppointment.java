@@ -71,9 +71,12 @@ public class CustomerAppointment {
     @Override
     public String toString() {
         if (firstName.equalsIgnoreCase("Ferie")) {
-            return "CustomerAppointment: " + firstName;
-        } else {
+            return firstName;
 
+        } else if (firstName.equalsIgnoreCase("Frokost") || firstName.equalsIgnoreCase("Optaget")) {
+            return firstName;
+
+        } else {
             return "CustomerAppointment: " + firstName + ", phone: " + phone
                     + ", products bought: " + product + ", Customer has paid: " + hasPaid;
         }

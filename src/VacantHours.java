@@ -1,38 +1,22 @@
-import java.util.Scanner;
-
 public class VacantHours {
-    Scanner in = new Scanner(System.in);
-    public String vacantReason;
-    public int occupiedHours;
 
-    // GETTER ---------------------------------------
-    public String getVacantReason() {
-        return vacantReason;
-    }
+    public void setVacantHour() {
+        int month = Calendar.scanMonth();
+        int date = Calendar.scanDate();
 
-    public int getOccupiedHours() {
-        return occupiedHours;
-    }
+        TestHarrySalon.in.nextLine();
 
-    // SETTER ----------------------------------------
-    public void setVacantReason(String vacantReason) {
-        this.vacantReason = vacantReason;
-    }
-
-    public void setOccupiedHours(int occupiedHours) {
-        this.occupiedHours = occupiedHours;
-    }
+        System.out.println("1: For at booke ud til frokost, 2: for andre grunde");
+        String input = TestHarrySalon.in.nextLine();
 
 
-    // CONSTRUCTOR ------------------------------------
-    public VacantHours() {
-        System.out.print("Whats the reason for vacant hours? :");
-        setVacantReason(in.nextLine());
-        System.out.print("How many hours will you be away? :");
-        setOccupiedHours(in.nextInt());
-    }
-
-    public String toString() {
-        return "VacantHours{vacantReason='" + vacantReason + "', occupiedHours=" + occupiedHours + "}";
+        if(input.equals("1")) {
+            new Calendar().getCalendar().get(CustomerAppointment.readTimeSlot() + (month * 31 * 8) - (31 * 8) + (date * 8) - 8).
+                    setCustomerAppointment("Til FROKOST", "");
+        } else {
+            new Calendar().getCalendar().get(CustomerAppointment.readTimeSlot() + (month * 31 * 8) - (31 * 8) + (date * 8) - 8).
+                    setCustomerAppointment("DESVÆRRE OPTAGET", "");
+        }
     }
 }
+

@@ -48,7 +48,4 @@ public class Dates {
         return getDate() + "/" + getMonth() + " Appointment at: " + getTimeSlot() + " customer "
                 + getCustomerAppointment();
     }
-
-    public void customerAppointment(String readName, String readPhone) {
-    }
 }
