@@ -29,7 +29,7 @@ public class Calendar {
         return TestHarrySalon.in.nextInt();
     }
 
-    public void printRequestedCalendarDates() {
+    public static void printRequestedCalendarDates() {
         int arrayPositionForRequestedDates = (scanMonth() * 31 * 8) - (31 * 8) + (scanDate() * 8) - 8;
         for (int i = arrayPositionForRequestedDates;
              i < arrayPositionForRequestedDates + 40; i++) {

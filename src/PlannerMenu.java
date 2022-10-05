@@ -5,8 +5,8 @@ public class PlannerMenu {
     private int userChoice;
     private String menuHeader;
     private String leadText;
-    private String[] menuItems = {"1: Make Appointment","2: Delete Appointment", "3: Add Vacant Hours",
-            "4: Add Holiday", "5: Make Payment", "6: Access Store Finance", "9: QUIT"};
+    private final String[] menuItems = {"1: Make Appointment","2: Delete Appointment", "3: Add Vacant Hours",
+            "4: Add Holiday", "5: Make Payment", "6: Access Store Finance", "7: Print Requested Date", "9: QUIT"};
 
     private boolean tryAgain = true;
 
@@ -18,71 +18,70 @@ public class PlannerMenu {
         menuHeader = "MENU:";
         leadText = "Please Choose: ";
         System.out.println(menuHeader);
-        System.out.println(toString());
         System.out.println(leadText);
+        readChoice();
     }
 
 
     @Override
     public String toString() {
         return menuItems[0]+ "\n" + menuItems[1] + "\n" + menuItems[2] + "\n" + menuItems[3] + "\n" +
-                menuItems[4]+ "\n" + menuItems[5] + "\n" + menuItems[6];
+                menuItems[4]+ "\n" + menuItems[5] + "\n" + menuItems[6] + "\n" + menuItems[7] + "\n";
     }
 
     public void readChoice(){
 
-        while(tryAgain) {
-
+        do {
+            System.out.println(this);
             userChoice = TestHarrySalon.in.nextInt();
 
 
             switch (userChoice) {
-                case 1:
+                case 1 -> {
                     System.out.println(menuItems[0]);
                     makeAppointment();
                     tryAgain = false;
-                    break;
-                case 2:
+                }
+                case 2 -> {
                     System.out.println(menuItems[1]);
                     deleteAppointment();
                     tryAgain = false;
-                    break;
-                case 3:
+                }
+                case 3 -> {
                     System.out.println(menuItems[2]);
-                    addHoliday();
-                    tryAgain = false;
-                    break;
-                case 4:
-                    System.out.println(menuItems[3]);
                     addVacantHour();
                     tryAgain = false;
-                    break;
-                case 5:
+                }
+                case 4 -> {
+                    System.out.println(menuItems[3]);
+                    addHoliday();
+                    tryAgain = false;
+                }
+                case 5 -> {
                     System.out.println(menuItems[4]);
 
                     tryAgain = false;
-                    break;
-                case 6:
+                }
+                case 6 -> {
                     System.out.println(menuItems[5]);
-
                     tryAgain = false;
-                    break;
-                case 9:
+                }
+                case 7 -> {
                     System.out.println(menuItems[6]);
+                    printRequestedDay();
                     tryAgain = false;
-                    break;
-                default:
+                }
+                case 9 -> {
+                    System.out.println(menuItems[7]);
+                    tryAgain = false;
+                }
+                default -> {
                     System.out.println("Please choose a valid option!");
                     System.out.println();
+                }
             }
-            if (tryAgain){
-                printMenu();
-                readChoice();
-            }
-        }
-
+        } while(tryAgain);
     }
-
 
     public void makeAppointment() {
         CustomerAppointment.setAppointment();
@@ -100,5 +99,8 @@ public class PlannerMenu {
         vacantHours.setVacantHour();
     }
 
+    public void printRequestedDay() {
+        Calendar.printRequestedCalendarDates();
+    }
 
 }

@@ -8,10 +8,15 @@ public class TestHarrySalon {
     PlannerMenu plannerMenu = new PlannerMenu();
 
     public void run(){
+        int testFourtyTimes = 40;
         calendar.makeCalendar();
         plannerMenu.printMenu();
-        plannerMenu.readChoice();
-        calendar.printRequestedCalendarDates();
+
+
+        for (int i = 0; i < testFourtyTimes; i++) {
+            plannerMenu.readChoice();
+        }
+
     }
 
     public static void main(String[] args){
