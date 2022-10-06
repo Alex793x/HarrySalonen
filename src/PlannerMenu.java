@@ -3,7 +3,7 @@ public class PlannerMenu {
     VacantHours vacantHours = new VacantHours();
 
     private final String[] menuItems = {"\n1: LAV AFTALE","2: FJERN AFTALE", "3: TILFØJ PAUSER",
-            "4: TILFØJ FERIEDAGE", "5: KASSE", "6: TILGÅ AFSTEMNING", "7: PRINT KALENDER", "9: QUIT"};
+            "4: TILFØJ FERIEDAGE", "5: KASSE", "6: TILGÅ AFSTEMNING", "7: SE 4 DAGE FREM", "9: QUIT"};
 
     private boolean tryAgain = true;
 

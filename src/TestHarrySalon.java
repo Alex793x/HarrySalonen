@@ -8,7 +8,8 @@ public class TestHarrySalon {
     public void run(){
         calendar.makeCalendar();
         //plannerMenu.printMenu();
-        calendar.printCalendar();
+        Calendar.printRequestedCalendarDates();
+        //calendar.printCalendar();
         // plannerMenu.readChoice();
     }
 

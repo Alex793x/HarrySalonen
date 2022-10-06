@@ -58,7 +58,7 @@ public class Finance {
             }
             System.out.println(new Calendar().getCalendar().get(i));
         }
-        System.out.println("Dagens omsætning: "+sumDay);
+        System.out.println("Dagens omsætning: "+ sumDay +",- DKK" );
     }
     public void calculateFiveDaysSum(){
         Calendar.setMonth();
@@ -75,7 +75,7 @@ public class Finance {
             }
             System.out.println(new Calendar().getCalendar().get(i));
         }
-        System.out.println("Dagens omsætning: "+sumFiveDays);
+        System.out.println("Dagens omsætning: " + sumFiveDays + ",- DKK");
     }
 
     @Override

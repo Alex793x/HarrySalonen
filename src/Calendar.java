@@ -46,12 +46,23 @@ public class Calendar {
     }
 
     public static void printRequestedCalendarDates() {
+        int k = 0;
         Calendar.setMonth();
         Calendar.setDate();
         int arrayPositionForRequestedDates = (getMonth() * 31 * 8) - (31 * 8) + (getDate() * 8) - 8;
-        for (int i = arrayPositionForRequestedDates;
-             i < arrayPositionForRequestedDates + 40; i++) {
-            System.out.println(calendar.get(i));
+        for (int i = arrayPositionForRequestedDates + 1, m = arrayPositionForRequestedDates;
+             i < arrayPositionForRequestedDates + 40; i+=2) {
+             for (int j = 0; j % 2 == 0; j++) {
+                 System.out.print(calendar.get(m));
+                 System.out.print("\t"+calendar.get(i)+"\n");
+                 m+=2;
+                 k++;
+
+                 if (k % 4 == 0) {
+                     System.out.println("--------------------------------------------------------------------" +
+                             "-------------------------------------------------------------------------");
+                 }
+            }
         }
     }
 
