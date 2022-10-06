@@ -11,7 +11,6 @@ public class CustomerAppointment {
     public CustomerAppointment(String firstName, String phone) {
         setFirstName(firstName);
         setPhone(phone);
-
     }
 
     // GETTER -------------------------------
