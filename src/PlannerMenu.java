@@ -13,7 +13,7 @@ public class PlannerMenu {
 
     public void printMenu(){
         String menuHeader = "MENU:";
-        String leadText = "VEÆL VENLIGST: ";
+        String leadText = "VÆLG VENLIGST: ";
         System.out.println(menuHeader);
         System.out.println(leadText);
         readChoice();
@@ -68,7 +68,7 @@ public class PlannerMenu {
                     tryAgain = false;
                 }
                 default -> {
-                    System.out.println("VÆLG EN GYLDIG MULIGHED");
+                    System.out.println("VÆLG EN RIGTIG MULIGHED");
                     System.out.println();
                 }
             }

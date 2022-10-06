@@ -56,7 +56,7 @@ public class Calendar {
     public static void printRequestDay() {
         Calendar.setMonth();
         Calendar.setDate();
-        int arrayPositionForRequestedDates = (Calendar.getMonth() * 31 * 8) - (31 * 8) + (Calendar.getDate() * 8) - 8;
+        int arrayPositionForRequestedDates = (getMonth() * 31 * 8) - (31 * 8) + (getDate() * 8) - 8;
         for (int i = arrayPositionForRequestedDates; i < arrayPositionForRequestedDates + 8; i++) {
             System.out.println(calendar.get(i));
         }

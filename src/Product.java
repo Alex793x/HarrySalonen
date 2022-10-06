@@ -4,14 +4,6 @@ public class Product {
     private int productAmount;
 
     // GETTER --------------------------------------
-    public String getProductName() {
-        return productName;
-    }
-
-    public double getProductPrice() {
-        return productPrice;
-    }
-
     public int getProductAmount() {
         return productAmount;
     }

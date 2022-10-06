@@ -4,9 +4,7 @@ public class CustomerAppointment {
     private String phone;
     Product shampoo = new Product("Shampoo", 15.75);
     Product hairbrush = new Product("Hårbørste", 50.00);
-    private static boolean hasPaid = true;
-
-    private static int timeSlotInput;
+    private boolean hasPaid = true;
 
     // CONSTRUCTOR -----------------------------------
 
@@ -17,17 +15,6 @@ public class CustomerAppointment {
     }
 
     // GETTER -------------------------------
-    private String getFirstName() {
-        return firstName;
-    }
-
-    public int getTimeSlotInput() {
-        return timeSlotInput;
-    }
-
-    private String getPhone() {
-        return phone;
-    }
 
     public boolean getHasPaid() {
         return hasPaid;
@@ -44,11 +31,7 @@ public class CustomerAppointment {
 
 
     public void setHasPaid(boolean hasPaid) {
-        CustomerAppointment.hasPaid = hasPaid;
-    }
-
-    public static void setTimeSlotInput() {
-        timeSlotInput = readTimeSlot();
+        this.hasPaid = hasPaid;
     }
 
     // ADD APPOINTMENT
