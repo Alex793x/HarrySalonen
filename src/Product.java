@@ -24,8 +24,8 @@ public class Product {
         this.productPrice = productPrice;
     }
 
-    public void setProductAmount(int productAmount) {
-        this.productAmount = productAmount;
+    public void setProductAmount() {
+        this.productAmount++;
     }
 
     public Product(String productName, double productPrice) {
@@ -34,6 +34,6 @@ public class Product {
     }
 
     public String toString() {
-        return "Product{productName='" + productName + "', productPrice=" + productPrice + "}";
+        return "Produkt: " + productName + ", Pris: " + productPrice + ".-" + " Antal: " + productAmount + " ";
     }
 }

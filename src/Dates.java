@@ -1,5 +1,6 @@
 public class Dates {
     CustomerAppointment customerAppointment = new CustomerAppointment("Klar til at booke", "");
+
     private int date;
     private int month;
     private int timeSlot;
@@ -11,15 +12,15 @@ public class Dates {
         new CustomerAppointment("", "");
     }
 
-    public int getDate() {
+    private int getDate() {
         return date;
     }
 
-    public int getMonth() {
+    private int getMonth() {
         return month;
     }
 
-    public int getTimeSlot() {
+    private int getTimeSlot() {
         return timeSlot;
     }
 
@@ -27,15 +28,15 @@ public class Dates {
         return customerAppointment;
     }
 
-    public void setDate(int date) {
+    private void setDate(int date) {
         this.date = date;
     }
 
-    public void setMonth(int month) {
+    private void setMonth(int month) {
         this.month = month;
     }
 
-    public void setTimeSlot(int timeSlot) {
+    private void setTimeSlot(int timeSlot) {
         this.timeSlot = timeSlot;
     }
 

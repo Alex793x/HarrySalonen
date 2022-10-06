@@ -1,8 +1,28 @@
 import java.util.ArrayList;
 
 public class Calendar {
-
     private static final ArrayList<Dates> calendar = new ArrayList<>();
+    private static int date;
+    private static int month;
+
+    // GETTER --------------------------
+
+    public static int getDate() {
+        return date;
+    }
+
+    public static int getMonth() {
+        return month;
+    }
+
+    // SETTER --------------------------
+    public static void setDate(){
+        date = scanDate();
+    }
+
+    public static void setMonth() {
+        month = scanMonth();
+    }
 
     public void makeCalendar() {
         for (int i = 1; i <= 12; i++) {
@@ -13,15 +33,6 @@ public class Calendar {
             System.out.println();
         }
     }
-
-    /*    --------- CHECK --------     (Har vi overhovedet brug for denne metode?)
-
-    public void printCalendar() {
-        for (int i = 0; i < calendar.size(); i++)
-            System.out.println(calendar.get(i));
-    }
-
-     */
 
     public static int scanDate() {
         System.out.println("Hvilken dato");
@@ -34,12 +45,24 @@ public class Calendar {
     }
 
     public static void printRequestedCalendarDates() {
-        int arrayPositionForRequestedDates = (scanMonth() * 31 * 8) - (31 * 8) + (scanDate() * 8) - 8;
+        Calendar.setMonth();
+        Calendar.setDate();
+        int arrayPositionForRequestedDates = (getMonth() * 31 * 8) - (31 * 8) + (getDate() * 8) - 8;
         for (int i = arrayPositionForRequestedDates;
              i < arrayPositionForRequestedDates + 40; i++) {
             System.out.println(calendar.get(i));
         }
     }
+
+    public static void printRequestDay() {
+        Calendar.setMonth();
+        Calendar.setDate();
+        int arrayPositionForRequestedDates = (Calendar.getMonth() * 31 * 8) - (31 * 8) + (Calendar.getDate() * 8) - 8;
+        for (int i = arrayPositionForRequestedDates; i < arrayPositionForRequestedDates + 8; i++) {
+            System.out.println(calendar.get(i));
+        }
+    }
+
     public ArrayList<Dates> getCalendar() {
         return calendar;
     }

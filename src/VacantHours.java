@@ -1,8 +1,7 @@
 public class VacantHours {
 
     public void setVacantHour() {
-        int month = Calendar.scanMonth();
-        int date = Calendar.scanDate();
+        Calendar.printRequestDay();
 
         TestHarrySalon.in.nextLine();
 
@@ -11,10 +10,10 @@ public class VacantHours {
 
 
         if(input.equals("1")) {
-            new Calendar().getCalendar().get(CustomerAppointment.readTimeSlot() + (month * 31 * 8) - (31 * 8) + (date * 8) - 8).
+            new Calendar().getCalendar().get(CustomerAppointment.readTimeSlot() + (Calendar.getMonth() * 31 * 8) - (31 * 8) + (Calendar.getDate() * 8) - 8).
                     setCustomerAppointment("FROKOST", "");
         } else {
-            new Calendar().getCalendar().get(CustomerAppointment.readTimeSlot() + (month * 31 * 8) - (31 * 8) + (date * 8) - 8).
+            new Calendar().getCalendar().get(CustomerAppointment.readTimeSlot() + (Calendar.getMonth() * 31 * 8) - (31 * 8) + (Calendar.getMonth() * 8) - 8).
                     setCustomerAppointment("OPTAGET", "");
         }
     }

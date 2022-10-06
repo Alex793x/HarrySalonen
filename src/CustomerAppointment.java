@@ -2,8 +2,11 @@ public class CustomerAppointment {
 
     private String firstName;
     private String phone;
-    private Product product;
-    boolean hasPaid;
+    Product shampoo = new Product("Shampoo", 15.75);
+    Product hairbrush = new Product("Hårbørste", 50.00);
+    private static boolean hasPaid = true;
+
+    private static int timeSlotInput;
 
     // CONSTRUCTOR -----------------------------------
 
@@ -13,45 +16,54 @@ public class CustomerAppointment {
     }
 
     // GETTER -------------------------------
-    public String getFirstName() {
+    private String getFirstName() {
         return firstName;
     }
 
-    public String getPhone() {
+    public int getTimeSlotInput() {
+        return timeSlotInput;
+    }
+
+    private String getPhone() {
         return phone;
     }
 
-    public boolean hasPaid() {
+    public boolean getHasPaid() {
         return hasPaid;
     }
 
     // SETTER ---------------------------------
-    public void setFirstName(String firstName) {
+    private void setFirstName(String firstName) {
         this.firstName = firstName;
     }
 
-    public void setPhone(String phone) {
+    private void setPhone(String phone) {
         this.phone = phone;
     }
 
 
     public void setHasPaid(boolean hasPaid) {
-        this.hasPaid = hasPaid;
+        CustomerAppointment.hasPaid = hasPaid;
+    }
+
+    public static void setTimeSlotInput() {
+        timeSlotInput = readTimeSlot();
     }
 
     // ADD APPOINTMENT
     public static void setAppointment() {
-        new Calendar().getCalendar().get(readTimeSlot() + (Calendar.scanMonth() * 31 * 8) - (31 * 8) + (Calendar.scanDate() * 8) - 8).
-                setCustomerAppointment(readName(), readPhone());
+        Calendar.printRequestDay();
+        new Calendar().getCalendar().get(((Calendar.getMonth() * 31 * 8) - (31 * 8) + (Calendar.getDate() * 8) - 8) +
+                readTimeSlot()).setCustomerAppointment(readName(), readPhone());
     }
 
-    public static String readName() {
+    private static String readName() {
         TestHarrySalon.in.nextLine();
         System.out.println("Tast kundens navn:");
         return TestHarrySalon.in.nextLine();
     }
 
-    public static String readPhone() {
+    private static String readPhone() {
         System.out.println("Tast kundens telefon nr.");
         return TestHarrySalon.in.nextLine();
     }
@@ -63,8 +75,9 @@ public class CustomerAppointment {
 
     //DELETE CUSTOMER AND MAKE ARRAYPOS DEFAULT
     public static void deleteAppointment() {
-        new Calendar().getCalendar().get(readTimeSlot() + (Calendar.scanMonth() * 31 * 8) - (31 * 8) + (Calendar.scanDate() * 8) - 8).
-                setCustomerAppointment("klar til at booke", "");
+        Calendar.printRequestDay();
+        new Calendar().getCalendar().get(((Calendar.getMonth() * 31 * 8) - (31 * 8) + (Calendar.getDate() * 8) - 8) +
+                readTimeSlot()).setCustomerAppointment("klar til at booke", "");
     }
 
 
@@ -81,7 +94,7 @@ public class CustomerAppointment {
 
         } else {
             return "Kundeaftale: " + firstName + ", Telefon: " + phone
-                    + ", Produkter købt: " + product + ", Kunde har betalt: " + hasPaid;
+                    + ", Produkter købt: " + shampoo + hairbrush + ", Kunde har betalt: " + hasPaid;
         }
     }
 }
