@@ -92,7 +92,10 @@ public class CustomerAppointment {
         } else if (firstName.equalsIgnoreCase("Klar til at booke")) {
             return "Tid ledig - " + firstName;
 
-        } else {
+        } else if (shampoo.getProductAmount() <= 0 && hairbrush.getProductAmount() <= 0) {
+            return "Kundeaftale: " + firstName + ", Telefon: " + phone + ", Kunde har betalt: " + hasPaid;
+        }
+        else {
             return "Kundeaftale: " + firstName + ", Telefon: " + phone
                     + ", Produkter købt: " + shampoo + hairbrush + ", Kunde har betalt: " + hasPaid;
         }

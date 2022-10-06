@@ -30,7 +30,6 @@ public class Calendar {
                 for (int x = 1000; x < 1800; x += 100) {
                     calendar.add(new Dates(j, i, x));
                 }
-            System.out.println();
         }
     }
 

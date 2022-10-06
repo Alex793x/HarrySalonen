@@ -44,7 +44,6 @@ public class Dates {
         this.customerAppointment = new CustomerAppointment(firstName, phoneNumber);
     }
 
-
     public String toString() {
         return getDate() + "/" + getMonth() + " - Klokken " + getTimeSlot() + " - Aktiviteter: "
                 + getCustomerAppointment();

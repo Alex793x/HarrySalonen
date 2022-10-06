@@ -15,6 +15,7 @@ public class Product {
     public int getProductAmount() {
         return productAmount;
     }
+
     // SETTER --------------------------------------
     public void setProductName(String product) {
         this.productName = product;
