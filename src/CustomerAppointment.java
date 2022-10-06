@@ -60,7 +60,7 @@ public class CustomerAppointment {
     public static void deleteAppointment() {
         Calendar.printRequestDay();
         new Calendar().getCalendar().get(((Calendar.getMonth() * 31 * 8) - (31 * 8) + (Calendar.getDate() * 8) - 8) +
-                readTimeSlot()).setCustomerAppointment("klar til at booke", "");
+                readTimeSlot()).setCustomerAppointment("Klar til at booke", "");
     }
 
 

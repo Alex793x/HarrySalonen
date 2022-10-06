@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Calendar {
     private static final ArrayList<Dates> calendar = new ArrayList<>();
@@ -25,11 +26,12 @@ public class Calendar {
     }
 
     public void makeCalendar() {
-        for (int i = 1; i <= 12; i++) {
-            for (int j = 1; j <= 31; j++)
-                for (int x = 1000; x < 1800; x += 100) {
-                    calendar.add(new Dates(j, i, x));
+        for (CalenderMonthDefiner months : CalenderMonthDefiner.values()) {
+            for (int j = 1; j <= 31; j++) {
+            for (int x = 1000; x < 1800; x += 100) {
+                    calendar.add(new Dates(j, months, x));
                 }
+            }
         }
     }
 
@@ -60,6 +62,11 @@ public class Calendar {
         for (int i = arrayPositionForRequestedDates; i < arrayPositionForRequestedDates + 8; i++) {
             System.out.println(calendar.get(i));
         }
+    }
+
+    public void printCalendar() {
+        for (int i = 0; i < calendar.size(); i++)
+            System.out.println(calendar.get(i));
     }
 
     public ArrayList<Dates> getCalendar() {
