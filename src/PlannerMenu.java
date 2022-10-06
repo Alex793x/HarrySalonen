@@ -68,7 +68,7 @@ public class PlannerMenu {
                     tryAgain = false;
                 }
                 default -> {
-                    System.out.println("Please choose a valid option!");
+                    System.out.println("VÆLG EN GYLDIG MULIGHED");
                     System.out.println();
                 }
             }
@@ -93,6 +93,18 @@ public class PlannerMenu {
 
     private void printRequestedDay() {
         Calendar.printRequestedCalendarDates();
+    }
+
+    public void enterPassword(){
+        boolean isPasswordIncorrect = true;
+        while (isPasswordIncorrect) {
+            System.out.println("Indtast venligst password: ");
+            String password = TestHarrySalon.in.nextLine();
+            if (password.equals("hairyharry")) {
+                isPasswordIncorrect = false;
+                new Finance().sumDayUp();
+            }
+        }
     }
 
     private void register() {
