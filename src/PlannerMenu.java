@@ -7,10 +7,6 @@ public class PlannerMenu {
 
     private boolean tryAgain = true;
 
-    public boolean isTryAgain() {
-        return tryAgain;
-    }
-
     public void printMenu(){
         String menuHeader = "MENU:";
         String leadText = "VÆLG VENLIGST: ";
@@ -97,12 +93,12 @@ public class PlannerMenu {
 
     public void enterPassword(){
         boolean isPasswordIncorrect = true;
+        System.out.println("Indtast venligst password: ");
         while (isPasswordIncorrect) {
-            System.out.println("Indtast venligst password: ");
             String password = TestHarrySalon.in.nextLine();
             if (password.equals("hairyharry")) {
                 isPasswordIncorrect = false;
-                new Finance().sumDayUp();
+                new Finance().accountingOptions();
             }
         }
     }
