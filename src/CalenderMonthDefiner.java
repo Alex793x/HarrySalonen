@@ -14,14 +14,10 @@ public enum CalenderMonthDefiner {
     DECEMBER(31);
 
 
-    public int monthValue;
+    public final int monthValue;
 
     CalenderMonthDefiner(int monthValue) {
         this.monthValue = monthValue;
-    }
-
-    public static int getCalenderMonthDefiner(int month) {
-        return month;
     }
 
     public int getCalenderMonthDefiner() {

@@ -3,12 +3,12 @@ public class Product {
     private double productPrice;
     private int productAmount;
 
-    // GETTER --------------------------------------
+    // GETTER -------------------------------------------------------------------
     public int getProductAmount() {
         return productAmount;
     }
 
-    // SETTER --------------------------------------
+    // SETTER --------------------------------------------------------------------
     public void setProductName(String product) {
         this.productName = product;
     }
@@ -21,6 +21,7 @@ public class Product {
         this.productAmount++;
     }
 
+    // CONSTRUCTOR ------------------------------------------------------------------
     public Product(String productName, double productPrice) {
         setProductName(productName);
         setProductPrice(productPrice);

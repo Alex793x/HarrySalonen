@@ -95,10 +95,9 @@ public class Calendar {
 
 
     public static void printRequestedCalendarDates() {
-        int k = 0;
         Calendar.setMonth();
         Calendar.setDate();
-        int arrayPositionForRequestedDates = ((getMonth() * getMonthDays(getMonth()) * 8) - (getDiffDays(getMonth()) * 8 )) - (getMonthDays((getMonth())) * 8) + (getDate() * 8) - 8;
+        int arrayPositionForRequestedDates = findCalendarArrayPosition();
         for (int i = arrayPositionForRequestedDates;
              i < arrayPositionForRequestedDates + 40; i ++) {
             System.out.println(calendar.get(i));
@@ -108,15 +107,15 @@ public class Calendar {
     public static void printRequestDay() {
         Calendar.setMonth();
         Calendar.setDate();
-        int arrayPositionForRequestedDates = ((getMonth() * getMonthDays(getMonth()) * 8) - (getDiffDays(getMonth()) * 8 )) - (getMonthDays((getMonth())) * 8) + (getDate() * 8) - 8;
+        int arrayPositionForRequestedDates = findCalendarArrayPosition();
         for (int i = arrayPositionForRequestedDates; i < arrayPositionForRequestedDates + 8; i++) {
             System.out.println(calendar.get(i));
         }
     }
 
-    public void printCalendar() {
-        for (int i = 0; i < calendar.size(); i++)
-            System.out.println(calendar.get(i));
+    public static int findCalendarArrayPosition() {
+        return (getMonth() * getMonthDays(getMonth()) * 8) - (getDiffDays(getMonth()) * 8) -
+                (getMonthDays((getMonth())) * 8) + (getDate() * 8) - 8;
     }
 
     public ArrayList<Dates> getCalendar() {

@@ -7,6 +7,8 @@ public class PlannerMenu {
 
     private boolean tryAgain = true;
 
+    // PLANER MENU SELECTORS ---------------------------------------------------------
+
     public void printMenu(){
         String menuHeader = "MENU:";
         String leadText = "VÆLG VENLIGST: ";
@@ -33,14 +35,17 @@ public class PlannerMenu {
             switch (userChoice) {
                 case 1 -> {
                     System.out.println(menuItems[0]);
+                    Calendar.printRequestDay();
                     makeAppointment();
                 }
                 case 2 -> {
                     System.out.println(menuItems[1]);
+                    Calendar.printRequestDay();
                     deleteAppointment();
                 }
                 case 3 -> {
                     System.out.println(menuItems[2]);
+                    Calendar.printRequestDay();
                     addVacantHour();
                 }
                 case 4 -> {
@@ -71,6 +76,8 @@ public class PlannerMenu {
         }
     }
 
+
+    // METHODS FOR PLANNER MENU ----------------------------------------------------------
     private void makeAppointment() {
         CustomerAppointment.setAppointment();
     }
@@ -91,11 +98,13 @@ public class PlannerMenu {
         Calendar.printRequestedCalendarDates();
     }
 
-    public void enterPassword(){
+    public void enterPassword() {
         boolean isPasswordIncorrect = true;
-        System.out.println("Indtast venligst password: ");
+        System.out.println("INDTAST VENLIGST PASSWORD: ");
+
         while (isPasswordIncorrect) {
             String password = TestHarrySalon.in.nextLine();
+
             if (password.equals("hairyharry")) {
                 isPasswordIncorrect = false;
                 new Finance().accountingOptions();
@@ -103,8 +112,8 @@ public class PlannerMenu {
         }
     }
 
+    // INSTANTIATE REGISTER CLASS AND MAKE IT REACHABLE -------------------------------
     private void register() {
         new Register().paymentOptions();
     }
-
 }

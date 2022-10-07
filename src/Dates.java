@@ -12,6 +12,8 @@ public class Dates {
         new CustomerAppointment("", "");
     }
 
+
+    // GETTERS ------------------------------------------------------------
     private int getDate() {
         return date;
     }
@@ -28,6 +30,8 @@ public class Dates {
         return customerAppointment;
     }
 
+
+    // SETTERS --------------------------------------------------------------
     private void setDate(int date) {
         this.date = date;
     }

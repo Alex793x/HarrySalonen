@@ -1,6 +1,6 @@
 public class Finance {
 
-    // MENU SELECTOR
+    // MENU FINANCE SELECTOR -----------------------------------------------
     private final String[] accountingChoices = {"\n1: DAGS AFSTEMNING", "\n2: UGE AFSTEMNING", "\n9: GÅ TILLAGE"};
     private boolean keepRunning = true;
     public void accountingOptions() {
@@ -41,15 +41,13 @@ public class Finance {
         }
     }
 
-
-    // ACCOUNT MENU METHODS
-    public void calculateDailySum() {
+    // ACCOUNT MENU METHODS ----------------------------------------------
+    private void calculateDailySum() {
         Calendar.setMonth();
         Calendar.setDate();
+
         double sumDay = 0;
-        int arrayPositionForRequestedDates = ((Calendar.getMonth() * Calendar.getMonthDays( Calendar.getMonth()) * 8) -
-                (Calendar.getDiffDays(Calendar.getMonth()) * 8 )) - (Calendar.getMonthDays((Calendar.getMonth())) * 8) +
-                (Calendar.getDate() * 8) - 8;
+        int arrayPositionForRequestedDates = Calendar.findCalendarArrayPosition();
 
         for (int i = arrayPositionForRequestedDates;
              i < arrayPositionForRequestedDates + 8; i++) {
@@ -63,13 +61,13 @@ public class Finance {
         }
         System.out.println("Dagens omsætning: "+ sumDay +",- DKK" );
     }
-    public void calculateFiveDaysSum(){
+
+    private void calculateFiveDaysSum() {
         Calendar.setMonth();
         Calendar.setDate();
+
         double sumFiveDays = 0;
-        int arrayPositionForRequestedDates =((Calendar.getMonth() * Calendar.getMonthDays(Calendar.getMonth()) * 8) -
-                (Calendar.getDiffDays(Calendar.getMonth()) * 8 )) - (Calendar.getMonthDays((Calendar.getMonth())) * 8) +
-                (Calendar.getDate() * 8) - 8;
+        int arrayPositionForRequestedDates = Calendar.findCalendarArrayPosition();
 
         for (int i = arrayPositionForRequestedDates;
              i < arrayPositionForRequestedDates + 40; i++) {
@@ -81,7 +79,12 @@ public class Finance {
             }
             System.out.println(new Calendar().getCalendar().get(i));
         }
-        System.out.println("Dagens omsætning: " + sumFiveDays + ",- DKK");
+        if (sumFiveDays < 1) {
+            System.out.println(Colors.RED + "\nDagens omsætning: " + sumFiveDays + ",- DKK" + Colors.RESET);
+        } else {
+            System.out.println(Colors.GREEN + "\nDagens omsætning: " + sumFiveDays + ",- DKK" + Colors.RESET);
+        }
+
     }
 
     @Override

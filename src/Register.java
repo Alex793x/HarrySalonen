@@ -5,9 +5,7 @@ public class Register {
 
     private final String[] registerOptions = {"\n1: BETAL", "\n2: PÅ KREDIT", "\n3: TILFØJ PRODUKTER", "\n9: GÅ TILBAGE"};
 
-
-    // MENU SELECTOR --------------------------
-
+    // MENU REGISTER SELECTOR ---------------------------------------------------------
     public void paymentOptions() {
         String menuHeader = "MENU:";
         String leadText = "VÆLG VENLIGST: ";
@@ -53,10 +51,10 @@ public class Register {
         }
     }
 
+    // METHODS FOR MENU REGISTER --------------------------------------------------------------
     public void makePayment() {
-        new Calendar().getCalendar().get(((Calendar.getMonth() * Calendar.getMonthDays(Calendar.getMonth()) * 8) -
-                (Calendar.getDiffDays(Calendar.getMonth()) * 8 )) - (Calendar.getMonthDays((Calendar.getMonth())) * 8) +
-                (Calendar.getDate() * 8) - 8 + CustomerAppointment.readTimeSlot()).customerAppointment.setHasPaid(true);
+        new Calendar().getCalendar().get(Calendar.findCalendarArrayPosition() +
+                CustomerAppointment.readTimeSlot()).customerAppointment.setHasPaid(true);
 
     }
 
@@ -102,22 +100,16 @@ public class Register {
 
 
     public void doCredit() {
-        new Calendar().getCalendar().get(((Calendar.getMonth() * Calendar.getMonthDays(Calendar.getMonth()) * 8) -
-                (Calendar.getDiffDays(Calendar.getMonth()) * 8 )) - (Calendar.getMonthDays((Calendar.getMonth())) * 8) +
-                (Calendar.getDate() * 8) - 8 +
+        new Calendar().getCalendar().get(Calendar.findCalendarArrayPosition() +
                 CustomerAppointment.readTimeSlot()).customerAppointment.setHasPaid(false);
     }
 
     public void setShampooAmount() {
-        new Calendar().getCalendar().get(((Calendar.getMonth() * Calendar.getMonthDays(Calendar.getMonth()) * 8) -
-                (Calendar.getDiffDays(Calendar.getMonth()) * 8 )) - (Calendar.getMonthDays((Calendar.getMonth())) * 8) +
-                (Calendar.getDate() * 8) - 8
-                + CustomerAppointment.readTimeSlot()).customerAppointment.shampoo.setProductAmount();
+        new Calendar().getCalendar().get(Calendar.findCalendarArrayPosition() +
+                CustomerAppointment.readTimeSlot()).customerAppointment.shampoo.setProductAmount();
     }
     public void setHairbrushAmount() {
-        new Calendar().getCalendar().get(((Calendar.getMonth() * Calendar.getMonthDays(Calendar.getMonth()) * 8) -
-                (Calendar.getDiffDays(Calendar.getMonth()) * 8 )) - (Calendar.getMonthDays((Calendar.getMonth())) * 8) +
-                (Calendar.getDate() * 8) - 8 +
+        new Calendar().getCalendar().get(Calendar.findCalendarArrayPosition() +
                 CustomerAppointment.readTimeSlot()).customerAppointment.hairbrush.setProductAmount();
     }
 

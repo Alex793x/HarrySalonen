@@ -18,9 +18,6 @@ public class CustomerAppointment {
     public boolean getHasPaid() {
         return hasPaid;
     }
-    public String getFirstName() {
-        return firstName;
-    }
 
     // SETTER ---------------------------------
     private void setFirstName(String firstName) {
@@ -36,7 +33,7 @@ public class CustomerAppointment {
         this.hasPaid = hasPaid;
     }
 
-    // ADD APPOINTMENT
+    // ADD APPOINTMENT ------------------------------------------------
     public static void setAppointment() {
         Calendar.printRequestDay();
         new Calendar().getCalendar().get(((Calendar.getMonth() * 31 * 8) - (31 * 8) + (Calendar.getDate() * 8) - 8) +
@@ -59,13 +56,10 @@ public class CustomerAppointment {
         return TestHarrySalon.in.nextInt() - 10;
     }
 
-    //DELETE CUSTOMER AND MAKE ARRAYPOS DEFAULT
+    //DELETE CUSTOMER AND MAKE ARRAY POSITION DEFAULT ---------------------------------------------------------------
     public static void deleteAppointment() {
-        Calendar.printRequestDay();
-        new Calendar().getCalendar().get(((Calendar.getMonth() * Calendar.getMonthDays(Calendar.getMonth()) * 8) -
-                (Calendar.getDiffDays(Calendar.getMonth()) * 8 )) - (Calendar.getMonthDays((Calendar.getMonth())) * 8) +
-                (Calendar.getDate() * 8) - 8
-                + readTimeSlot()).setCustomerAppointment("Klar til at booke", "");
+        new Calendar().getCalendar().get(Calendar.findCalendarArrayPosition() +
+                readTimeSlot()).setCustomerAppointment("KLAR TIL AT BOOKE", "");
     }
 
 
