@@ -38,12 +38,12 @@ public class CustomerAppointment {
 
     private static String readName() {
         TestHarrySalon.in.nextLine();
-        System.out.println("Tast kundens navn:");
+        System.out.println("TAST KUDNENS NAVN: ");
         return TestHarrySalon.in.nextLine();
     }
 
     private static String readPhone() {
-        System.out.println("Tast kundens telefon nr.");
+        System.out.println("TAST KUDNENS TLF. NR: ");
         return TestHarrySalon.in.nextLine();
     }
 
@@ -70,14 +70,15 @@ public class CustomerAppointment {
 
     @Override
     public String toString() {
-        if (firstName.equalsIgnoreCase("Ferie")) {
+        if (firstName.equalsIgnoreCase(Colors.RED + "FERIE" + Colors.RESET)) {
             return firstName;
 
-        } else if (firstName.equalsIgnoreCase("Frokost") || firstName.equalsIgnoreCase("Optaget")) {
+        } else if (firstName.equalsIgnoreCase(Colors.RED + "FROKOST" + Colors.RESET)
+                || firstName.equalsIgnoreCase(Colors.RED + "OPTAGET" + Colors.RESET)) {
             return firstName;
 
-        } else if (firstName.equalsIgnoreCase("Klar til at booke")) {
-            return "Tid ledig - " + firstName;
+        } else if (firstName.equalsIgnoreCase("KLAR TIL AT BOOKE")) {
+            return Colors.GREEN + "Tid ledig - " + Colors.RESET + firstName;
 
         } else if (shampoo.getProductAmount() <= 0 && hairbrush.getProductAmount() <= 0) {
             return "Kundeaftale: " + firstName + ", Telefon: " + phone + ", Kunde har betalt: " + hasPaid;

@@ -35,12 +35,51 @@ public class Calendar {
     }
 
     public static int scanDate() {
-        System.out.println("Hvilken dato");
+        System.out.println("VÆLG DAG:");
+
+        if (month==1){
+            System.out.println("VÆLG MELLEM 1-31");
+        } else if (month==2) {
+            System.out.println("VÆLG MELLEM 1-28");
+        } else if (month==3) {
+            System.out.println("VÆLG MELLEM 1-31");
+        } else if (month==4) {
+            System.out.println("VÆLG MELLEM 1-30");
+        } else if (month==5) {
+            System.out.println("VÆLG MELLEM 1-31");
+        } else if (month==6) {
+            System.out.println("VÆLG MELLEM 1-30");
+        } else if (month==7) {
+            System.out.println("VÆLG MELLEM 1-31");
+        } else if (month==8) {
+            System.out.println("VÆLG MELLEM 1-31");
+        } else if (month==9) {
+            System.out.println("VÆLG MELLEM 1-30");
+        } else if (month==10) {
+            System.out.println("VÆLG MELLEM 1-31");
+        } else if (month==11) {
+            System.out.println("VÆLG MELLEM 1-30");
+        } else if (month==12) {
+            System.out.println("VÆLG MELLEM 1-31");
+        }
         return TestHarrySalon.in.nextInt();
     }
 
     public static int scanMonth() {
-        System.out.println("Hvilken måned?");
+        System.out.println("VÆLG MÅNED:");
+        System.out.println("""
+                (Januar - 1)\s
+                (Februar - 2)\s
+                (Marts - 3)\s
+                (April - 4)\s
+                (Maj - 5)\s
+                (Juni - 6)\s
+                (Juli - 7)\s
+                (August - 8)\s
+                (September - 9)\s
+                (Oktober - 10)\s
+                (November - 11)\s
+                (December - 12)""");
         return TestHarrySalon.in.nextInt();
     }
 

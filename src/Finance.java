@@ -12,7 +12,7 @@ public class Finance {
         System.out.println(leadText);
     }
 
-    public void accountMenu() {
+    private void accountMenu() {
         while (keepRunning) {
             System.out.println(this);
             int userChoice = TestHarrySalon.in.nextInt();
