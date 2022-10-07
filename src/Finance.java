@@ -3,20 +3,19 @@ public class Finance {
     // MENU FINANCE SELECTOR -----------------------------------------------
     private final String[] accountingChoices = {"\n1: DAGS AFSTEMNING", "\n2: UGE AFSTEMNING", "\n9: GÅ TILLAGE"};
     private boolean keepRunning = true;
+
     public void accountingOptions() {
         String menuHeader = "MENU:";
         String leadText = "VÆLG VENLIGST: ";
         System.out.println(menuHeader);
         accountMenu();
         System.out.println(leadText);
-
     }
 
     public void accountMenu() {
         while (keepRunning) {
             System.out.println(this);
             int userChoice = TestHarrySalon.in.nextInt();
-
 
             switch (userChoice) {
                 case 1 -> {
@@ -51,15 +50,21 @@ public class Finance {
 
         for (int i = arrayPositionForRequestedDates;
              i < arrayPositionForRequestedDates + 8; i++) {
-            if (new Calendar().getCalendar().get(i).customerAppointment.getHasPaid()){
+            if (new Calendar().getCalendar().get(i).customerAppointment.getHasPaid()) {
+
                 //udregning for shampoo pris 15.75
-                sumDay += new Calendar().getCalendar().get(i).customerAppointment.shampoo.getProductAmount()*15.75;
+                sumDay += new Calendar().getCalendar().get(i).customerAppointment.shampoo.getProductAmount() * 15.75;
+
                 // udregning for hårbørste pris  50
-                sumDay += new Calendar().getCalendar().get(i).customerAppointment.hairbrush.getProductAmount()*50;
+                sumDay += new Calendar().getCalendar().get(i).customerAppointment.hairbrush.getProductAmount() * 50;
             }
             System.out.println(new Calendar().getCalendar().get(i));
         }
-        System.out.println("Dagens omsætning: "+ sumDay +",- DKK" );
+        if (sumDay < 1) {
+            System.out.println(Colors.RED + "\nDagens omsætning: " + sumDay + ",- DKK" + Colors.RESET);
+        } else {
+            System.out.println(Colors.GREEN + "\nDagens omsætning: " + sumDay + ",- DKK" + Colors.RESET);
+        }
     }
 
     private void calculateFiveDaysSum() {
@@ -72,10 +77,12 @@ public class Finance {
         for (int i = arrayPositionForRequestedDates;
              i < arrayPositionForRequestedDates + 40; i++) {
             if (new Calendar().getCalendar().get(i).customerAppointment.getHasPaid()) {
+
                 //udregning for shampoo pris 15.75
-                sumFiveDays += new Calendar().getCalendar().get(i).customerAppointment.shampoo.getProductAmount()*15.75;
+                sumFiveDays += new Calendar().getCalendar().get(i).customerAppointment.shampoo.getProductAmount() * 15.75;
+
                 // udregning for hårbørste pris  50
-                sumFiveDays += new Calendar().getCalendar().get(i).customerAppointment.hairbrush.getProductAmount()*50;
+                sumFiveDays += new Calendar().getCalendar().get(i).customerAppointment.hairbrush.getProductAmount() * 50;
             }
             System.out.println(new Calendar().getCalendar().get(i));
         }

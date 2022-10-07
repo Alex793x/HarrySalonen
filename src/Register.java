@@ -2,7 +2,6 @@ import java.util.Arrays;
 
 public class Register {
     private boolean productPick = true;
-
     private final String[] registerOptions = {"\n1: BETAL", "\n2: PÅ KREDIT", "\n3: TILFØJ PRODUKTER", "\n9: GÅ TILBAGE"};
 
     // MENU REGISTER SELECTOR ---------------------------------------------------------
@@ -12,7 +11,6 @@ public class Register {
         System.out.println(menuHeader);
         paymentChoice();
         System.out.println(leadText);
-
     }
 
     public void paymentChoice() {
@@ -97,8 +95,6 @@ public class Register {
         }
     }
 
-
-
     public void doCredit() {
         new Calendar().getCalendar().get(Calendar.findCalendarArrayPosition() +
                 CustomerAppointment.readTimeSlot()).customerAppointment.setHasPaid(false);
@@ -108,6 +104,7 @@ public class Register {
         new Calendar().getCalendar().get(Calendar.findCalendarArrayPosition() +
                 CustomerAppointment.readTimeSlot()).customerAppointment.shampoo.setProductAmount();
     }
+
     public void setHairbrushAmount() {
         new Calendar().getCalendar().get(Calendar.findCalendarArrayPosition() +
                 CustomerAppointment.readTimeSlot()).customerAppointment.hairbrush.setProductAmount();

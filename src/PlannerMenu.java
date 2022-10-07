@@ -2,14 +2,14 @@ public class PlannerMenu {
     Holiday holiday = new Holiday();
     VacantHours vacantHours = new VacantHours();
 
-    private final String[] menuItems = {"\n1: LAV AFTALE","2: FJERN AFTALE", "3: TILFØJ PAUSER",
+    private final String[] menuItems = {"\n1: LAV AFTALE", "2: FJERN AFTALE", "3: TILFØJ PAUSER",
             "4: TILFØJ FERIEDAGE", "5: KASSE", "6: TILGÅ AFSTEMNING", "7: SE 4 DAGE FREM", "9: QUIT"};
 
     private boolean tryAgain = true;
 
     // PLANER MENU SELECTORS ---------------------------------------------------------
 
-    public void printMenu(){
+    public void printMenu() {
         String menuHeader = "MENU:";
         String leadText = "VÆLG VENLIGST: ";
         System.out.println(menuHeader);
@@ -20,17 +20,16 @@ public class PlannerMenu {
 
     @Override
     public String toString() {
-        return menuItems[0]+ "\n" + menuItems[1] + "\n" + menuItems[2] + "\n" + menuItems[3] + "\n" +
-                menuItems[4]+ "\n" + menuItems[5] + "\n" + menuItems[6] + "\n" + menuItems[7] + "\n";
+        return menuItems[0] + "\n" + menuItems[1] + "\n" + menuItems[2] + "\n" + menuItems[3] + "\n" +
+                menuItems[4] + "\n" + menuItems[5] + "\n" + menuItems[6] + "\n" + menuItems[7] + "\n";
     }
 
-    public void readChoice(){
+    public void readChoice() {
 
 
-        while(tryAgain) {
+        while (tryAgain) {
             System.out.println(this);
             int userChoice = TestHarrySalon.in.nextInt();
-
 
             switch (userChoice) {
                 case 1 -> {

@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.concurrent.CancellationException;
 
 public class Calendar {
     private static final ArrayList<Dates> calendar = new ArrayList<>();
@@ -17,7 +16,7 @@ public class Calendar {
     }
 
     // SETTER --------------------------
-    public static void setDate(){
+    public static void setDate() {
         date = scanDate();
     }
 
@@ -93,13 +92,12 @@ public class Calendar {
         };
     }
 
-
     public static void printRequestedCalendarDates() {
         Calendar.setMonth();
         Calendar.setDate();
         int arrayPositionForRequestedDates = findCalendarArrayPosition();
         for (int i = arrayPositionForRequestedDates;
-             i < arrayPositionForRequestedDates + 40; i ++) {
+             i < arrayPositionForRequestedDates + 40; i++) {
             System.out.println(calendar.get(i));
         }
     }
