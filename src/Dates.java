@@ -2,10 +2,10 @@ public class Dates {
     CustomerAppointment customerAppointment = new CustomerAppointment("Klar til at booke", "");
 
     private int date;
-    private int month;
+    private CalenderMonthDefiner month;
     private int timeSlot;
 
-    public Dates(int date, int month, int timeSlot) {
+    public Dates(int date, CalenderMonthDefiner month, int timeSlot) {
         setDate(date);
         setMonth(month);
         setTimeSlot(timeSlot);
@@ -16,7 +16,7 @@ public class Dates {
         return date;
     }
 
-    private int getMonth() {
+    private CalenderMonthDefiner getMonth() {
         return month;
     }
 
@@ -32,7 +32,7 @@ public class Dates {
         this.date = date;
     }
 
-    private void setMonth(int month) {
+    private void setMonth(CalenderMonthDefiner month) {
         this.month = month;
     }
 

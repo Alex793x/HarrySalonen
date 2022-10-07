@@ -18,6 +18,9 @@ public class CustomerAppointment {
     public boolean getHasPaid() {
         return hasPaid;
     }
+    public String getFirstName() {
+        return firstName;
+    }
 
     // SETTER ---------------------------------
     private void setFirstName(String firstName) {
@@ -53,14 +56,16 @@ public class CustomerAppointment {
 
     public static int readTimeSlot() {
         System.out.println("Hvilket tidspunkt på dagen, tast 1 for 10:00, tast 2 for 11:00 3 for 12:00 og så videre:");
-        return TestHarrySalon.in.nextInt() - 1;
+        return TestHarrySalon.in.nextInt() - 10;
     }
 
     //DELETE CUSTOMER AND MAKE ARRAYPOS DEFAULT
     public static void deleteAppointment() {
         Calendar.printRequestDay();
-        new Calendar().getCalendar().get(((Calendar.getMonth() * 31 * 8) - (31 * 8) + (Calendar.getDate() * 8) - 8) +
-                readTimeSlot()).setCustomerAppointment("Klar til at booke", "");
+        new Calendar().getCalendar().get(((Calendar.getMonth() * Calendar.getMonthDays(Calendar.getMonth()) * 8) -
+                (Calendar.getDiffDays(Calendar.getMonth()) * 8 )) - (Calendar.getMonthDays((Calendar.getMonth())) * 8) +
+                (Calendar.getDate() * 8) - 8
+                + readTimeSlot()).setCustomerAppointment("Klar til at booke", "");
     }
 
 

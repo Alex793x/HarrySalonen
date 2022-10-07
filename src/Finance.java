@@ -47,7 +47,10 @@ public class Finance {
         Calendar.setMonth();
         Calendar.setDate();
         double sumDay = 0;
-        int arrayPositionForRequestedDates = (Calendar.getMonth() * 31 * 8) - (31 * 8) + (Calendar.getDate() * 8) - 8;
+        int arrayPositionForRequestedDates = ((Calendar.getMonth() * Calendar.getMonthDays( Calendar.getMonth()) * 8) -
+                (Calendar.getDiffDays(Calendar.getMonth()) * 8 )) - (Calendar.getMonthDays((Calendar.getMonth())) * 8) +
+                (Calendar.getDate() * 8) - 8;
+
         for (int i = arrayPositionForRequestedDates;
              i < arrayPositionForRequestedDates + 8; i++) {
             if (new Calendar().getCalendar().get(i).customerAppointment.getHasPaid()){
@@ -64,7 +67,10 @@ public class Finance {
         Calendar.setMonth();
         Calendar.setDate();
         double sumFiveDays = 0;
-        int arrayPositionForRequestedDates = (Calendar.getMonth() * 31 * 8) - (31 * 8) + (Calendar.getDate() * 8) - 8;
+        int arrayPositionForRequestedDates =((Calendar.getMonth() * Calendar.getMonthDays(Calendar.getMonth()) * 8) -
+                (Calendar.getDiffDays(Calendar.getMonth()) * 8 )) - (Calendar.getMonthDays((Calendar.getMonth())) * 8) +
+                (Calendar.getDate() * 8) - 8;
+
         for (int i = arrayPositionForRequestedDates;
              i < arrayPositionForRequestedDates + 40; i++) {
             if (new Calendar().getCalendar().get(i).customerAppointment.getHasPaid()) {
