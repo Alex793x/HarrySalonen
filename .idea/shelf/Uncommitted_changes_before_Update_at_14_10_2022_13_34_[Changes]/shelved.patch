@@ -1,0 +1,128 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"d1c37175-4e7c-4d18-b80c-9fd73f8b3b92\" name=\"Changes\" comment=\"Added colors, refactored code structure - Finish\">\r\n      <change afterPath=\"$PROJECT_DIR$/diagram.uml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/Calendar.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Calendar.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/CalenderMonthDefiner.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/CalenderMonthDefiner.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/CustomerAppointment.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/CustomerAppointment.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/TestHarrySalon.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/TestHarrySalon.java\" afterDir=\"false\" />\r\n    </list>\r\n    <list id=\"aa00ca31-c310-40ef-b59d-3b60f5a86a0c\" name=\"Changes by alexanderchristensen\" comment=\"Changes by alexanderchristensen\" />\r\n    <list id=\"5291e1be-7996-4043-adce-bca901a8da32\" name=\"Changes by Mikkel\" comment=\"Changes by Mikkel\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ChangesViewManager\">\r\n    <option name=\"groupingKeys\">\r\n      <option value=\"directory\" />\r\n    </option>\r\n  </component>\r\n  <component name=\"CodeStyleSettingsInfer\">\r\n    <option name=\"done\" value=\"true\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Enum\" />\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectCodeStyleSettingsMigration\">\r\n    <option name=\"version\" value=\"2\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2FhV5Jd6zh8xwEpJhpvMvunArZ3\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"ASKED_ADD_EXTERNAL_FILES\": \"true\",\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"SHARE_PROJECT_CONFIGURATION_FILES\": \"true\",\r\n    \"WebServerToolWindowFactoryState\": \"false\",\r\n    \"codeWithMe.voiceChat.enabledByDefault\": \"false\",\r\n    \"last_opened_file_path\": \"C:/Users/AlexT/OneDrive/Skrivebord/KEA/Datamatiker/Programmering/Koder/HarrysSalon\",\r\n    \"run.code.analysis.last.selected.profile\": \"pProject Default\",\r\n    \"settings.editor.selected.configurable\": \"preferences.pluginManager\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RunManager\">\r\n    <configuration name=\"TestHarrySalon\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"TestHarrySalon\" />\r\n      <module name=\"HarrysSalon\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Application.TestHarrySalon\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"d1c37175-4e7c-4d18-b80c-9fd73f8b3b92\" name=\"Changes\" comment=\"\" />\r\n      <created>1664944119227</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1664944119227</updated>\r\n      <workItem from=\"1664944120668\" duration=\"5073000\" />\r\n      <workItem from=\"1664950804361\" duration=\"24042000\" />\r\n      <workItem from=\"1664987928550\" duration=\"63122000\" />\r\n      <workItem from=\"1665266590613\" duration=\"19000\" />\r\n      <workItem from=\"1665386657449\" duration=\"9687000\" />\r\n      <workItem from=\"1665489093520\" duration=\"682000\" />\r\n      <workItem from=\"1665570095344\" duration=\"2553000\" />\r\n      <workItem from=\"1665647251317\" duration=\"5543000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Ferie class added with book whole day method\">\r\n      <created>1664967522161</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1664967522161</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"tilføjet klasse VacantHours med metode som kaldes i PlannerMenu\">\r\n      <created>1664969364829</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1664969364829</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Har redigeret i return statements af vores tostring\">\r\n      <created>1664972838324</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1664972838324</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"PlannerMenu added with menu options in console\">\r\n      <created>1664979485796</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1664979485796</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"Refactored PlannerMenu with a doWhile and enhanced switch&#10;Also implemented loop in run()\">\r\n      <created>1664981714987</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1664981714987</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"refactored and commented out unwanted method\">\r\n      <created>1664987410828</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1664987410828</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"Added Register System which can add different products\">\r\n      <created>1665061449726</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1665061449726</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"Changes by alexanderchristensen\">\r\n      <created>1665061474622</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1665061474622</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"Changes by Mikkel\">\r\n      <created>1665061486905</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1665061486905</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"Fixed hasPaid method away from static\">\r\n      <created>1665065016423</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1665065016423</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00011\" summary=\"added another method for finance to look up a single day. &#10;added a menu for finance to choose between a day or a week&#10;fixed password, which was printing twice\">\r\n      <created>1665066584959</created>\r\n      <option name=\"number\" value=\"00011\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1665066584959</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00012\" summary=\"fixed few composition and went through most typeErrors\">\r\n      <created>1665070274121</created>\r\n      <option name=\"number\" value=\"00012\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00012\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1665070274121</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00013\" summary=\"Added two Enum classes and modified Calendar.java ---&gt; makeCalender()\">\r\n      <created>1665082883463</created>\r\n      <option name=\"number\" value=\"00013\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00013\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1665082883463</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00014\" summary=\"added correct month days value.\">\r\n      <created>1665082997024</created>\r\n      <option name=\"number\" value=\"00014\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00014\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1665082997024</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00015\" summary=\"modified the print of printRequestedCalenderDates\">\r\n      <created>1665088428418</created>\r\n      <option name=\"number\" value=\"00015\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00015\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1665088428418</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00016\" summary=\"Calendar.java is now dynamic, with correct Days in each month, while also&#10;taking account for difference in days when the algorithm extends for new &#10;months.\">\r\n      <created>1665142386968</created>\r\n      <option name=\"number\" value=\"00016\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00016\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1665142386968</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00017\" summary=\"Added colors, refactored code structure - Finish\">\r\n      <created>1665147474378</created>\r\n      <option name=\"number\" value=\"00017\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00017\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1665147474378</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00018\" summary=\"Changes by alexanderchristensen\">\r\n      <created>1665147487255</created>\r\n      <option name=\"number\" value=\"00018\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00018\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1665147487255</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00019\" summary=\"Changes by Mikkel\">\r\n      <created>1665147494586</created>\r\n      <option name=\"number\" value=\"00019\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00019\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1665147494586</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"20\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <option name=\"ADD_EXTERNAL_FILES_SILENTLY\" value=\"true\" />\r\n    <MESSAGE value=\"Ferie class added with book whole day method\" />\r\n    <MESSAGE value=\"tilføjet klasse VacantHours med metode som kaldes i PlannerMenu\" />\r\n    <MESSAGE value=\"Har redigeret i return statements af vores tostring\" />\r\n    <MESSAGE value=\"PlannerMenu added with menu options in console\" />\r\n    <MESSAGE value=\"Refactored PlannerMenu with a doWhile and enhanced switch&#10;Also implemented loop in run()\" />\r\n    <MESSAGE value=\"refactored and commented out unwanted method\" />\r\n    <MESSAGE value=\"Added Register System which can add different products\" />\r\n    <MESSAGE value=\"Fixed hasPaid method away from static\" />\r\n    <MESSAGE value=\"added another method for finance to look up a single day. &#10;added a menu for finance to choose between a day or a week&#10;fixed password, which was printing twice\" />\r\n    <MESSAGE value=\"fixed few composition and went through most typeErrors\" />\r\n    <MESSAGE value=\"Added two Enum classes and modified Calendar.java ---&gt; makeCalender()\" />\r\n    <MESSAGE value=\"added correct month days value.\" />\r\n    <MESSAGE value=\"modified the print of printRequestedCalenderDates\" />\r\n    <MESSAGE value=\"Calendar.java is now dynamic, with correct Days in each month, while also&#10;taking account for difference in days when the algorithm extends for new &#10;months.\" />\r\n    <MESSAGE value=\"Added colors, refactored code structure - Finish\" />\r\n    <MESSAGE value=\"Changes by alexanderchristensen\" />\r\n    <MESSAGE value=\"Changes by Mikkel\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Changes by Mikkel\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision b1f3b106e13bc524f2c7f7005cfa89a505341cd1)
++++ b/.idea/workspace.xml	(date 1665747273924)
+@@ -1,13 +1,9 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ChangeListManager">
+-    <list default="true" id="d1c37175-4e7c-4d18-b80c-9fd73f8b3b92" name="Changes" comment="Added colors, refactored code structure - Finish">
+-      <change afterPath="$PROJECT_DIR$/diagram.uml" afterDir="false" />
++    <list default="true" id="d1c37175-4e7c-4d18-b80c-9fd73f8b3b92" name="Changes" comment="refactored calender text">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/Calendar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Calendar.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/CalenderMonthDefiner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CalenderMonthDefiner.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/CustomerAppointment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CustomerAppointment.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/TestHarrySalon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestHarrySalon.java" afterDir="false" />
+     </list>
+     <list id="aa00ca31-c310-40ef-b59d-3b60f5a86a0c" name="Changes by alexanderchristensen" comment="Changes by alexanderchristensen" />
+     <list id="5291e1be-7996-4043-adce-bca901a8da32" name="Changes by Mikkel" comment="Changes by Mikkel" />
+@@ -49,19 +45,19 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "ASKED_ADD_EXTERNAL_FILES": "true",
+-    "RunOnceActivity.OpenProjectViewOnStart": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+-    "WebServerToolWindowFactoryState": "false",
+-    "codeWithMe.voiceChat.enabledByDefault": "false",
+-    "last_opened_file_path": "C:/Users/AlexT/OneDrive/Skrivebord/KEA/Datamatiker/Programmering/Koder/HarrysSalon",
+-    "run.code.analysis.last.selected.profile": "pProject Default",
+-    "settings.editor.selected.configurable": "preferences.pluginManager"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
++    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
++    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
++    &quot;last_opened_file_path&quot;: &quot;C:/Users/AlexT/OneDrive/Skrivebord/KEA/Datamatiker/Programmering/Koder/HarrysSalon&quot;,
++    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
++    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="RunManager">
+     <configuration name="TestHarrySalon" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+       <option name="MAIN_CLASS_NAME" value="TestHarrySalon" />
+@@ -92,6 +88,7 @@
+       <workItem from="1665489093520" duration="682000" />
+       <workItem from="1665570095344" duration="2553000" />
+       <workItem from="1665647251317" duration="5543000" />
++      <workItem from="1665746510463" duration="758000" />
+     </task>
+     <task id="LOCAL-00001" summary="Ferie class added with book whole day method">
+       <created>1664967522161</created>
+@@ -226,7 +223,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1665147494586</updated>
+     </task>
+-    <option name="localTasksCounter" value="20" />
++    <task id="LOCAL-00020" summary="refactored calender text">
++      <created>1665746529700</created>
++      <option name="number" value="00020" />
++      <option name="presentableId" value="LOCAL-00020" />
++      <option name="project" value="LOCAL" />
++      <updated>1665746529700</updated>
++    </task>
++    <option name="localTasksCounter" value="21" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -262,6 +266,7 @@
+     <MESSAGE value="Added colors, refactored code structure - Finish" />
+     <MESSAGE value="Changes by alexanderchristensen" />
+     <MESSAGE value="Changes by Mikkel" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Changes by Mikkel" />
++    <MESSAGE value="refactored calender text" />
++    <option name="LAST_COMMIT_MESSAGE" value="refactored calender text" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: src/CustomerAppointment.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>public class CustomerAppointment {\r\n\r\n    private String firstName;\r\n    private String phone;\r\n    Product shampoo = new Product(\"Shampoo\", 15.75);\r\n    Product hairbrush = new Product(\"Hårbørste\", 50.00);\r\n    private boolean hasPaid = true;\r\n\r\n    // CONSTRUCTOR -----------------------------------\r\n    public CustomerAppointment(String firstName, String phone) {\r\n        setFirstName(firstName);\r\n        setPhone(phone);\r\n    }\r\n\r\n    // GETTER -------------------------------\r\n    public boolean getHasPaid() {\r\n        return hasPaid;\r\n    }\r\n\r\n    // SETTER ---------------------------------\r\n    private void setFirstName(String firstName) {\r\n        this.firstName = firstName;\r\n    }\r\n\r\n    private void setPhone(String phone) {\r\n        this.phone = phone;\r\n    }\r\n\r\n    public void setHasPaid(boolean hasPaid) {\r\n        this.hasPaid = hasPaid;\r\n    }\r\n\r\n    // ADD APPOINTMENT ------------------------------------------------\r\n    public static void setAppointment() {\r\n        new Calendar().getCalendar().get(Calendar.findCalendarArrayPosition()\r\n                + readTimeSlot()).setCustomerAppointment(readName(), readPhone());\r\n    }\r\n\r\n    private static String readName() {\r\n        TestHarrySalon.in.nextLine();\r\n        System.out.println(\"TAST KUDNENS NAVN: \");\r\n        return TestHarrySalon.in.nextLine();\r\n    }\r\n\r\n    private static String readPhone() {\r\n        System.out.println(\"TAST KUDNENS TLF. NR: \");\r\n        return TestHarrySalon.in.nextLine();\r\n    }\r\n\r\n    public static int readTimeSlot() {\r\n        System.out.println();\r\n        int tid = 10;\r\n        int tidSlot = 10;\r\n        for (int i = 0; i <= 8; i++) {\r\n        System.out.printf(\"Tast %d for %d:00\\n\", tid++, tidSlot++);\r\n        }\r\n\r\n        /*System.out.println(\"\"\"\r\n                HVILKET TIDSPUNKT PÅ DAGEN?\\s\r\n                Tast 10 for 10:00\\s\r\n                Tast 11 for 11:00\\s\r\n                Tast 12 for 12:00\r\n                Tast 13 for 13:00\\s\r\n                Tast 14 for 14:00\\s\r\n                Tast 15 for 15:00\\s\r\n                Tast 16 for 16:00\\s\r\n                Tast 17 for 17:00\"\"\");\r\n\r\n         */\r\n        return TestHarrySalon.in.nextInt() - 10;\r\n    }\r\n\r\n    //DELETE CUSTOMER AND MAKE ARRAY POSITION DEFAULT ---------------------------------------------------------------\r\n    public static void deleteAppointment() {\r\n        new Calendar().getCalendar().get(Calendar.findCalendarArrayPosition() +\r\n                readTimeSlot()).setCustomerAppointment(\"KLAR TIL AT BOOKE\", \"\");\r\n    }\r\n\r\n    @Override\r\n    public String toString() {\r\n        if (firstName.equalsIgnoreCase(Colors.RED + \"FERIE\" + Colors.RESET)) {\r\n            return firstName;\r\n\r\n        } else if (firstName.equalsIgnoreCase(Colors.RED + \"FROKOST\" + Colors.RESET)\r\n                || firstName.equalsIgnoreCase(Colors.RED + \"OPTAGET\" + Colors.RESET)) {\r\n            return firstName;\r\n\r\n        } else if (firstName.equalsIgnoreCase(\"KLAR TIL AT BOOKE\")) {\r\n            return Colors.GREEN + \"Tid ledig - \" + Colors.RESET + firstName;\r\n\r\n        } else if (shampoo.getProductAmount() <= 0 && hairbrush.getProductAmount() <= 0) {\r\n            return \"Kundeaftale: \" + firstName + \", Telefon: \" + phone + \", Kunde har betalt: \" + hasPaid;\r\n        }\r\n        else {\r\n            return \"Kundeaftale: \" + firstName + \", Telefon: \" + phone\r\n                    + \", Produkter købt: \" + shampoo + hairbrush + \", Kunde har betalt: \" + hasPaid;\r\n        }\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/CustomerAppointment.java b/src/CustomerAppointment.java
+--- a/src/CustomerAppointment.java	(revision b1f3b106e13bc524f2c7f7005cfa89a505341cd1)
++++ b/src/CustomerAppointment.java	(date 1665746971856)
+@@ -48,25 +48,13 @@
+     }
+ 
+     public static int readTimeSlot() {
++
+         System.out.println();
+         int tid = 10;
+         int tidSlot = 10;
+         for (int i = 0; i <= 8; i++) {
+         System.out.printf("Tast %d for %d:00\n", tid++, tidSlot++);
+         }
+-
+-        /*System.out.println("""
+-                HVILKET TIDSPUNKT PÅ DAGEN?\s
+-                Tast 10 for 10:00\s
+-                Tast 11 for 11:00\s
+-                Tast 12 for 12:00
+-                Tast 13 for 13:00\s
+-                Tast 14 for 14:00\s
+-                Tast 15 for 15:00\s
+-                Tast 16 for 16:00\s
+-                Tast 17 for 17:00""");
+-
+-         */
+         return TestHarrySalon.in.nextInt() - 10;
+     }
+ 
