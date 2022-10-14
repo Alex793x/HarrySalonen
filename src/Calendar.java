@@ -60,7 +60,7 @@ public class Calendar {
         } else if (month==11) {
             System.out.println("VÆLG MELLEM 1-30");
         } else if (month==12) {
-            System.out.println("VÆLG MELLEM 1-31");
+            System.out.println("VÆLG MELLEM 1-31 hvad så deeeeeer");
         }
         return TestHarrySalon.in.nextInt();
     }
