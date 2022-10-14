@@ -8,11 +8,11 @@ public class TestHarrySalon {
     public void run(){
         calendar.makeCalendar();
         plannerMenu.printMenu();
-        //calendar.printCalendar();
-        // plannerMenu.readChoice();
+
     }
 
     public static void main(String[] args){
         new TestHarrySalon().run();
     }
+
 }

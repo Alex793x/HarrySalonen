@@ -1,29 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d1c37175-4e7c-4d18-b80c-9fd73f8b3b92" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HarrysSalon.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Calender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CustomerAppointment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DaysInAMonth.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Holidays.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/VacantHours.java" afterDir="false" />
+    <list default="true" id="d1c37175-4e7c-4d18-b80c-9fd73f8b3b92" name="Changes" comment="Added colors, refactored code structure - Finish">
+      <change afterPath="$PROJECT_DIR$/diagram.uml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Calendar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Calendar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CalenderMonthDefiner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CalenderMonthDefiner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CustomerAppointment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CustomerAppointment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TestHarrySalon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestHarrySalon.java" afterDir="false" />
     </list>
+    <list id="aa00ca31-c310-40ef-b59d-3b60f5a86a0c" name="Changes by alexanderchristensen" comment="Changes by alexanderchristensen" />
+    <list id="5291e1be-7996-4043-adce-bca901a8da32" name="Changes by Mikkel" comment="Changes by Mikkel" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
   </component>
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
@@ -31,8 +27,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -53,14 +49,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "last_opened_file_path": "C:/Users/AlexT/OneDrive/Skrivebord/KEA/Datamatiker/Programmering/Koder/HarrysSalon",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
+  <component name="RunManager">
+    <configuration name="TestHarrySalon" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TestHarrySalon" />
+      <module name="HarrysSalon" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TestHarrySalon" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -70,8 +85,148 @@
       <option name="presentableId" value="Default" />
       <updated>1664944119227</updated>
       <workItem from="1664944120668" duration="5073000" />
-      <workItem from="1664950804361" duration="8407000" />
+      <workItem from="1664950804361" duration="24042000" />
+      <workItem from="1664987928550" duration="63122000" />
+      <workItem from="1665266590613" duration="19000" />
+      <workItem from="1665386657449" duration="9687000" />
+      <workItem from="1665489093520" duration="682000" />
+      <workItem from="1665570095344" duration="2553000" />
+      <workItem from="1665647251317" duration="5543000" />
     </task>
+    <task id="LOCAL-00001" summary="Ferie class added with book whole day method">
+      <created>1664967522161</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1664967522161</updated>
+    </task>
+    <task id="LOCAL-00002" summary="tilføjet klasse VacantHours med metode som kaldes i PlannerMenu">
+      <created>1664969364829</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1664969364829</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Har redigeret i return statements af vores tostring">
+      <created>1664972838324</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1664972838324</updated>
+    </task>
+    <task id="LOCAL-00004" summary="PlannerMenu added with menu options in console">
+      <created>1664979485796</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1664979485796</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Refactored PlannerMenu with a doWhile and enhanced switch&#10;Also implemented loop in run()">
+      <created>1664981714987</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1664981714987</updated>
+    </task>
+    <task id="LOCAL-00006" summary="refactored and commented out unwanted method">
+      <created>1664987410828</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1664987410828</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added Register System which can add different products">
+      <created>1665061449726</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1665061449726</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Changes by alexanderchristensen">
+      <created>1665061474622</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1665061474622</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Changes by Mikkel">
+      <created>1665061486905</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1665061486905</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Fixed hasPaid method away from static">
+      <created>1665065016423</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1665065016423</updated>
+    </task>
+    <task id="LOCAL-00011" summary="added another method for finance to look up a single day. &#10;added a menu for finance to choose between a day or a week&#10;fixed password, which was printing twice">
+      <created>1665066584959</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1665066584959</updated>
+    </task>
+    <task id="LOCAL-00012" summary="fixed few composition and went through most typeErrors">
+      <created>1665070274121</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1665070274121</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Added two Enum classes and modified Calendar.java ---&gt; makeCalender()">
+      <created>1665082883463</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1665082883463</updated>
+    </task>
+    <task id="LOCAL-00014" summary="added correct month days value.">
+      <created>1665082997024</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1665082997024</updated>
+    </task>
+    <task id="LOCAL-00015" summary="modified the print of printRequestedCalenderDates">
+      <created>1665088428418</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1665088428418</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Calendar.java is now dynamic, with correct Days in each month, while also&#10;taking account for difference in days when the algorithm extends for new &#10;months.">
+      <created>1665142386968</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1665142386968</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Added colors, refactored code structure - Finish">
+      <created>1665147474378</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1665147474378</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Changes by alexanderchristensen">
+      <created>1665147487255</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1665147487255</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Changes by Mikkel">
+      <created>1665147494586</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1665147494586</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -87,5 +242,26 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Ferie class added with book whole day method" />
+    <MESSAGE value="tilføjet klasse VacantHours med metode som kaldes i PlannerMenu" />
+    <MESSAGE value="Har redigeret i return statements af vores tostring" />
+    <MESSAGE value="PlannerMenu added with menu options in console" />
+    <MESSAGE value="Refactored PlannerMenu with a doWhile and enhanced switch&#10;Also implemented loop in run()" />
+    <MESSAGE value="refactored and commented out unwanted method" />
+    <MESSAGE value="Added Register System which can add different products" />
+    <MESSAGE value="Fixed hasPaid method away from static" />
+    <MESSAGE value="added another method for finance to look up a single day. &#10;added a menu for finance to choose between a day or a week&#10;fixed password, which was printing twice" />
+    <MESSAGE value="fixed few composition and went through most typeErrors" />
+    <MESSAGE value="Added two Enum classes and modified Calendar.java ---&gt; makeCalender()" />
+    <MESSAGE value="added correct month days value." />
+    <MESSAGE value="modified the print of printRequestedCalenderDates" />
+    <MESSAGE value="Calendar.java is now dynamic, with correct Days in each month, while also&#10;taking account for difference in days when the algorithm extends for new &#10;months." />
+    <MESSAGE value="Added colors, refactored code structure - Finish" />
+    <MESSAGE value="Changes by alexanderchristensen" />
+    <MESSAGE value="Changes by Mikkel" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes by Mikkel" />
   </component>
 </project>

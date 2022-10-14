@@ -49,7 +49,13 @@ public class CustomerAppointment {
 
     public static int readTimeSlot() {
         System.out.println();
-        System.out.println("""
+        int tid = 10;
+        int tidSlot = 10;
+        for (int i = 0; i <= 8; i++) {
+        System.out.printf("Tast %d for %d:00\n", tid++, tidSlot++);
+        }
+
+        /*System.out.println("""
                 HVILKET TIDSPUNKT PÅ DAGEN?\s
                 Tast 10 for 10:00\s
                 Tast 11 for 11:00\s
@@ -59,6 +65,8 @@ public class CustomerAppointment {
                 Tast 15 for 15:00\s
                 Tast 16 for 16:00\s
                 Tast 17 for 17:00""");
+
+         */
         return TestHarrySalon.in.nextInt() - 10;
     }
 

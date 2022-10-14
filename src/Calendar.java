@@ -67,7 +67,14 @@ public class Calendar {
 
     public static int scanMonth() {
         System.out.println("VÆLG MÅNED:");
-        System.out.println("""
+        int count = 1;
+        for (CalenderMonthDefiner month : CalenderMonthDefiner.values()) {
+            System.out.println(month.getMonthName() + " - " + count++);
+        }
+
+
+
+        /* System.out.println("""
                 (Januar - 1)\s
                 (Februar - 2)\s
                 (Marts - 3)\s
@@ -80,6 +87,8 @@ public class Calendar {
                 (Oktober - 10)\s
                 (November - 11)\s
                 (December - 12)""");
+
+         */
         return TestHarrySalon.in.nextInt();
     }
 
