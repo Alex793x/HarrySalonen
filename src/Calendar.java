@@ -58,7 +58,7 @@ public class Calendar {
         } else if (month==10) {
             System.out.println("VÆLG MELLEM 1-31");
         } else if (month==11) {
-            System.out.println("VÆLG MELLEM 1-30");
+            System.out.println("VÆLG MELLEM 1-30 tis");
         } else if (month==12) {
             System.out.println("VÆLG MELLEM 1-31 hvad så deeeeeer");
         }
