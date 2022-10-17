@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="813.3237272115837" y="625.2743471208735">PlannerMenu</node>
+    <node x="1090.2030524710995" y="-153.79312692756923">Calendar</node>
+    <node x="837.8237272115837" y="356.2907831070327">Holiday</node>
+    <node x="1976.9108811908222" y="-279.1253068583651">CustomerAppointment</node>
+    <node x="2474.7729054122756" y="-201.1253068583651">Product</node>
+    <node x="1028.2030524710995" y="-661.3913103185728">Dates</node>
+    <node x="1743.562914062795" y="479.68265161914337">Register</node>
+    <node x="557.5385844780201" y="578.6826516191434">VacantHours</node>
+    <node x="94.70305247109934" y="-603.7931269275692">Colors</node>
+    <node x="1109.7030524710995" y="647.7414751485551">Finance</node>
+    <node x="510.53858447802" y="-576.1836978618253">CalenderMonthDefiner</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="CustomerAppointment" target="Calendar" relationship="CREATE">
+      <point x="-125.5" y="0.0" />
+      <point x="1632.1560152738673" y="-85.1253068583651" />
+      <point x="1632.1560152738673" y="51.20687307243077" />
+      <point x="119.0" y="0.0" />
+    </edge>
+    <edge source="Calendar" target="Dates" relationship="CREATE">
+      <point x="0.0" y="-205.0" />
+      <point x="1209.2030524710995" y="-198.2487930175347" />
+      <point x="1189.7030524710995" y="-198.2487930175347" />
+      <point x="0.0" y="171.0" />
+    </edge>
+    <edge source="CustomerAppointment" target="Product" relationship="CREATE">
+      <point x="125.5" y="15.0" />
+      <point x="-101.0" y="15.0" />
+    </edge>
+    <edge source="PlannerMenu" target="VacantHours" relationship="CREATE">
+      <point x="-93.5" y="-175.5" />
+      <point x="694.8686017790578" y="632.7743471208735" />
+      <point x="80.0" y="15.0916955017301" />
+    </edge>
+    <edge source="Dates" target="CalenderMonthDefiner" relationship="TO_ONE">
+      <point x="-161.5" y="0.0" />
+      <point x="637.5385844780201" y="-490.3913103185728" />
+      <point x="0.0" y="-205.0" />
+    </edge>
+    <edge source="Dates" target="CustomerAppointment" relationship="CREATE">
+      <point x="161.5" y="0.0" />
+      <point x="2102.4108811908222" y="-490.3913103185728" />
+      <point x="0.0" y="-194.0" />
+    </edge>
+    <edge source="Holiday" target="Calendar" relationship="CREATE">
+      <point x="0.0" y="-39.0" />
+      <point x="906.8237272115837" y="51.20687307243077" />
+      <point x="-119.0" y="0.0" />
+    </edge>
+    <edge source="PlannerMenu" target="Finance" relationship="CREATE">
+      <point x="93.5" y="0.0" />
+      <point x="1055.0133898413414" y="808.2743471208735" />
+      <point x="1055.0133898413414" y="753.7414751485551" />
+      <point x="-99.5" y="0.0" />
+    </edge>
+    <edge source="PlannerMenu" target="Holiday" relationship="TO_ONE">
+      <point x="0.0" y="-183.0" />
+      <point x="0.0" y="39.0" />
+    </edge>
+    <edge source="PlannerMenu" target="Register" relationship="CREATE">
+      <point x="93.5" y="123.5" />
+      <point x="1840.062914062795" y="931.7743471208735" />
+      <point x="0.0" y="138.0" />
+    </edge>
+    <edge source="Register" target="Calendar" relationship="CREATE">
+      <point x="-96.5" y="-5.991349480968836" />
+      <point x="1353.8582211562205" y="611.6913021381745" />
+      <point x="1353.8582211562205" y="248.70687307243077" />
+      <point x="119.0" y="197.5" />
+    </edge>
+    <edge source="VacantHours" target="Calendar" relationship="CREATE">
+      <point x="0.0" y="-39.0" />
+      <point x="637.5385844780201" y="36.20687307243077" />
+      <point x="-119.0" y="-15.0" />
+    </edge>
+    <edge source="Calendar" target="Dates" relationship="TO_MANY">
+      <point x="15.0" y="-205.0" />
+      <point x="1224.2030524710995" y="-198.2487930175347" />
+      <point x="1204.7030524710995" y="-198.2487930175347" />
+      <point x="15.0" y="171.0" />
+    </edge>
+    <edge source="Dates" target="CustomerAppointment" relationship="TO_ONE">
+      <point x="161.5" y="-15.0" />
+      <point x="2117.4108811908222" y="-505.3913103185728" />
+      <point x="15.0" y="-194.0" />
+    </edge>
+    <edge source="Finance" target="Calendar" relationship="CREATE">
+      <point x="0.0" y="-106.0" />
+      <point x="0.0" y="205.0" />
+    </edge>
+    <edge source="PlannerMenu" target="Holiday" relationship="CREATE">
+      <point x="15.0" y="-183.0" />
+      <point x="15.0" y="39.0" />
+    </edge>
+    <edge source="CustomerAppointment" target="Product" relationship="TO_ONE">
+      <point x="125.5" y="0.0" />
+      <point x="-101.0" y="0.0" />
+    </edge>
+    <edge source="PlannerMenu" target="VacantHours" relationship="TO_ONE">
+      <point x="-93.5" y="-160.5" />
+      <point x="694.8686017790578" y="647.7743471208735" />
+      <point x="80.0" y="30.0916955017301" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Compact" zoom="0.46944162436548226" showDependencies="true" x="223.20305247109945" y="51.20687307243077" />
+  <SelectedNodes>
+    <node>Colors</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

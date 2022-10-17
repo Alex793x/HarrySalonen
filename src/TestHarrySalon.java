@@ -6,7 +6,7 @@ public class TestHarrySalon {
     PlannerMenu plannerMenu = new PlannerMenu();
 
     public void run(){
-        calendar.makeCalendar();
+            calendar.makeCalendar();
         plannerMenu.printMenu();
 
     }
